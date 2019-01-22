@@ -1,0 +1,121 @@
+.main {
+    position: relative;
+}
+
+.section-one {
+    position: relative;
+    text-align: center;
+    margin-bottom: 4rem;
+
+    @media all and (max-width: 1500px) {
+        padding: 0 5%;
+    }
+
+    @media all and (max-width: 900px) {
+        padding: 0 10%;
+        margin-bottom: 2rem;
+    }
+
+    @media all and (max-width: 600px) {
+        margin-bottom: 1.5rem;
+    }
+
+    @media all and (max-width: 400px) {
+        padding: 0;
+    }
+}
+
+.section-two {
+    background: url("../img/section-two.jpg");
+    background-size: cover;
+    clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
+    font-family: 'Rubik', sans-serif;
+    padding: 8rem 0 14rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-heading-primary {
+        color: rgb(235, 252, 245);
+        text-shadow: 3px 3px 2px rgba(0, 68, 53, .8);
+        // margin-top: 12rem;
+    }
+
+    .section-heading-secondary {
+        margin-top: 4%; 
+    }
+
+    @media all and (max-width: 1200px) {
+        padding: 8rem 0 12rem 0;
+    }
+
+    @media all and (max-width: 900px) {
+        padding: 6rem 0 9rem 0;
+    }
+
+    @media all and (max-width: 600px) {
+        padding: 5rem 0 8.5rem 0;
+    }
+    
+}
+.section-three {
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-heading-primary {
+        margin-top: 2rem;
+    }
+
+    .section-heading-secondary {
+        text-shadow: none;
+        margin-top: 4rem;
+    }
+
+    .section-heading-tertiary {
+        font-family: "Rubik", sans-serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        transform: skewX(10deg);
+        display: inline-block;
+        padding: 2.5rem;
+        background-image: linear-gradient(to bottom right, #00a876, #00b97c);
+        color: white;
+        transition: transform .3s;
+        box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            transform: skewX(0);
+        }
+    }
+}
+
+.section-four {
+    background-image: linear-gradient(to right bottom, #00a876, #00b97c);
+    padding: 15rem 10rem;
+    text-align: center;
+    clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+    position: relative;
+
+    @media all and (max-width: 1500px) {
+        padding: 7rem 8rem;
+    }
+
+    @media all and (max-width: 600px) {
+        padding: 6rem 3.5rem;
+    }
+    
+    @media all and (max-width: 480px) {
+        padding: 3rem 2rem;      
+    }
+
+    .section-heading-primary {
+        margin-bottom: 4.5rem;
+
+        @media all and (max-width: 1200px) {
+            margin: 3rem 0;
+        }
+    }
+}

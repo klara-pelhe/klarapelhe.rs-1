@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Rubik:500');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
+
+@font-face {
+    font-family: 'mont-bold-italic';
+    src: url(../fonts/Mont-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: 'UniversLTStd-Light';
+    src: url(../fonts/UniversLTStd-Light.otf);
+}
+
+@font-face {
+    font-family: 'Filson-Pro-Regular-Italic';
+    src: url(../fonts/Filson-Pro-Regular-Italic.otf);
+}
+
+@font-face {
+    font-family: 'Filson-Pro-Thin';
+    src: url(../fonts/Filson-Pro-Thin.otf);
+}
+
+@font-face {
+    font-family: 'Filson-Pro-Regular';
+    src: url(../fonts/Filson-Pro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'BakerieSmoothWide-Medium';
+    src: url(../fonts/BakerieSmoothWide-Medium.otf);
+}
+
+.main-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7rem;
+
+    &__primary {
+        color: rgb(235, 252, 245);
+        font-family: 'mont-bold-italic';
+        letter-spacing: 2px;
+        text-shadow: 8px 8px 1px rgba(0, 68, 53, .5);
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+
+        @media all and (max-width: 900px) {
+            text-shadow: 5px 5px 1px rgba(0, 68, 53, .5);
+        }
+
+        @media all and (max-width: 600px) {
+            text-shadow: 3px 3px 1px rgba(0, 68, 53, .5);
+        }
+    }
+
+    &__secondary {
+        animation: fadeIn 3.5s;
+        animation-delay: 7s;
+        animation-fill-mode: forwards;
+        display: inline-block;
+        opacity: 0;
+        background: rgba(0, 68, 53, .6);
+        text-align: center; 
+        transform: skewX(-15deg);
+        padding: 1rem 2rem;
+
+        @media all and (max-width: 600px) {
+            padding: .8rem 1.3rem;
+        }
+
+        @media all and (max-width: 400px) {
+            padding: .8rem 1rem;
+        }
+    }
+}
+
+.heading-primary-first {
+    color: white;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 12rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    text-transform: none;
+
+    @media all and (max-width: 1200px) {
+        font-size: 10.5rem;
+    }
+
+    @media all and (max-width: 900px) {
+        font-size: 9.2rem;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 7rem;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 5.5rem;
+    }
+
+    &__hi {
+        animation: fadeInOut 3.5s;
+        opacity: 0;
+    }
+
+    &__mynameis {
+        animation: fadeInOut 3.5s;
+        animation-delay: 2.7s;
+        opacity: 0;
+        position: absolute;
+    }
+}
+
+.heading-primary-second {
+    animation: fadeIn 2s;
+    animation-delay: 5.2s;
+    animation-fill-mode: forwards;
+    display: block;
+    font-size: 12rem;
+    letter-spacing: 3px;
+    margin-bottom: 1%;
+    opacity: 0;
+    text-transform: uppercase;
+
+    @media all and (max-width: 1500px) {
+        font-size: 10rem;
+    }
+
+    @media all and (max-width: 900px) {
+        font-size: 7.5rem;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 4.5rem;
+        letter-spacing: 1px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 4.2rem;
+    }
+}
+
+.heading-secondary-first {
+    animation: fadeIn 3.5s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+    color: white;
+    display: inline-block;
+    font-family: 'mont-bold-italic';
+    opacity: 0;
+    white-space: nowrap;
+
+    &__iam {
+        display: block;
+        font-size: 3.1rem;
+        transform: skewX(15deg);
+
+        @media all and (max-width: 1500px) {
+            font-size: 2.5rem;
+        }
+
+        @media all and (max-width: 900px) {
+            font-size: 2rem;
+        }
+
+        @media all and (max-width: 600px) {
+            font-size: 1.6rem;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 1.2rem;
+        }
+    }
+    
+    &__tech {
+        display: block;
+        font-family: 'Filson-Pro-Thin';
+        font-size: 2rem;
+        transform: skewX(15deg);
+
+        @media all and (max-width: 1500px) {
+            font-size: 1.7rem;
+        }
+
+        @media all and (max-width: 900px) {
+            font-size: 1.5rem;
+        }
+
+        @media all and (max-width: 600px) {
+            font-size: 1.4rem;
+        }
+
+        @media all and (max-width: 400px) {
+            font-size: 1.15rem;
+        }
+    }
+}
+
+.section-heading-primary {
+    position: relative;
+    display: inline-block;
+    margin-top: 4rem;
+    transform: skewX(-12deg);
+    font-family: 'Rubik', sans-serif;
+    font-size: 3.3rem;
+    z-index: 3;
+    transition: .3s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &:hover {
+        transform: skewX(0);
+    }
+
+    @media all and (max-width: 1200px) {
+        font-size: 2.8rem;
+    }
+
+    @media all and (max-width: 900px) {
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+
+    @media all and (max-width: 600px) {
+        margin-bottom: 1rem;
+        font-size: 2.2rem;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+.section-heading-secondary {
+    position: relative;
+    color: white;
+    text-shadow: 3px 3px 2px rgba(0, 68, 53, 0.8);
+    transform: skewX(-12deg);
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2rem;
+
+    @media all and (max-width: 1200px) {
+        font-size: 1.7rem;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: 1.35rem;
+    }
+}

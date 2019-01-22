@@ -1,0 +1,196 @@
+.skills {
+    display: flex;
+    width: 60%;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    margin-top: 4rem;
+    justify-content: center;
+    margin-left: 4%;
+    margin-top: 6.5rem;
+
+    &__left,
+    &__right {
+        width: 50%;
+    }
+
+    &__left {
+        margin-right: 5%;
+
+        &--first {
+            width: 95%;
+        }
+    
+        &--second,
+        &--third {
+            width: 80%;
+            background: rgb(201, 255, 235) !important;
+        }
+    
+        &--fourth,
+        &--fifth {
+            width: 70%;
+            background: rgb(148, 253, 213) !important;
+        }
+    
+        &--sixth,
+        &--seventh {
+            width: 50%;
+            background: rgb(91, 253, 191) !important;
+        }
+    }
+
+    &__right {
+    
+        &--first,
+        &--second {
+            width: 95%;
+        }
+
+        &--third,
+        &--fourth {
+            width: 80%;
+            background: rgb(201, 255, 235) !important;
+        }
+
+        &--fifth,
+        &--sixth,
+        &--seventh {
+            width: 50%;
+            background: rgb(91, 253, 191) !important;
+        }
+    }
+
+    .skills-graph {
+        margin: .3rem 0 1.8rem 0;
+        background: rgb(255, 255, 255);
+        clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
+        height: 3.6rem;
+
+        @media all and (max-width: 1200px) {
+            height: 3.2rem;
+        }
+
+        @media all and (max-width: 600px) {
+            height: 2.6rem;
+            margin: .3rem 0 1.3rem 0;
+        }
+
+        @media all and (max-width: 480px) {
+            height: 2.1rem;
+        }
+    
+    }
+
+    .skills-text {
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px rgba(13, 95, 50, 0.8);
+        transform: skewX(-10deg);
+    }
+
+    @media all and (max-width: 1200px) {
+        width: 85%;
+    }
+
+    @media all and (max-width: 900px) {
+        margin-top: 5%;
+        font-size: 1.1rem;
+    }
+
+    @media all and (max-width: 600px) {
+        font-size: .9rem;
+        letter-spacing: 1px;
+    }
+
+    @media all and (max-width: 480px) {
+        font-size: .7rem;
+    }
+
+}
+
+.languages {
+    display: flex;
+    width: 60%;
+    margin-top: 3%;
+    margin-left: 4%;
+
+    @media all and (max-width: 1200px) {
+        width: 85%;
+    }
+
+    @media all and (max-width: 600px) {
+        margin-top: 4%;   
+    }
+
+    @media all and (max-width: 480px) {
+        margin-top: 6%;
+    }
+
+
+    &__eng,
+    &__esp {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-transform: uppercase;
+        
+
+        &--text {
+            text-align: center;
+            transform: skewX(-10deg);
+            text-shadow: 1px 1px 1px rgba(13, 95, 50, 0.8);
+            color: white;
+
+            @media all and (max-width: 1200px) {
+                font-size: 1.6rem;
+            }
+
+            @media all and (max-width: 900px) {
+                font-size: 1.4rem;
+            }
+
+            @media all and (max-width: 600px) {
+                font-size: .9rem;
+                letter-spacing: 1px;
+            }
+
+            @media all and (max-width: 480px) {
+                font-size: .8rem;
+            }    
+        }
+
+        &--graph {
+            height: 3.6rem;
+            clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
+            margin-top: 3%;
+
+            @media all and (max-width: 1200px) {
+                height: 3.2rem;
+            }
+
+            @media all and (max-width: 600px) {
+                height: 2.6rem;
+                margin: .3rem 0 .9rem 0;
+            }
+
+            @media all and (max-width: 480px) {
+                height: 2.1rem;
+            }
+        
+        }
+    }
+
+    &__eng {
+        margin-right: 5%;
+    }
+
+    &__eng--graph {
+        background: #c9ffeb;
+        width: 70%;
+    }
+
+    &__esp--graph {
+        background: #5bfdbf;
+        width: 50%;
+    }
+}
