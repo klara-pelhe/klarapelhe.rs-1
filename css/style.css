@@ -991,9 +991,9 @@ body {
 
 .blog-nav {
   position: fixed;
-  width: 30%;
+  width: 22%;
   height: 100%;
-  background: green;
+  background: #00b57b;
 }
 .footer {
   position: relative;
@@ -1624,6 +1624,11 @@ body {
   .section-four .section-heading-primary {
     margin: 3rem 0;
   }
+}
+
+.blog-main {
+  margin-left: 22%;
+  padding: 0 5%;
 }
 
 /*# sourceMappingURL=style.css.map */
