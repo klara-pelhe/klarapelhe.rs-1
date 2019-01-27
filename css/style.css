@@ -371,8 +371,16 @@ body {
 }
 
 .blog-primary-heading {
-  font-size: 2.1rem;
+  position: relative;
+  width: 100%;
+  font-size: 2.3rem;
   margin-bottom: 4rem;
+  background: #f5f9fa;
+  padding: 5rem;
+  text-align: center;
+}
+.blog-primary-heading__text {
+  display: inline-block;
 }
 
 .blog-secondary-heading {
@@ -1666,10 +1674,17 @@ body {
   }
 }
 
+body {
+  padding: 0;
+}
+
 .blog-main {
   margin-left: 22%;
-  padding: 0 20% 0 8%;
   font-family: "Zilla Slab", serif;
+}
+
+section {
+  padding: 0 20% 0 8%;
 }
 
 /*# sourceMappingURL=style.css.map */
