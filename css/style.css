@@ -370,6 +370,29 @@ body {
   }
 }
 
+.blog-primary-heading {
+  font-size: 2.1rem;
+  margin-bottom: 4rem;
+}
+
+.blog-secondary-heading {
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-page-notation {
+  font-weight: 500;
+  font-style: italic;
+  margin-right: 0.5rem;
+}
+
+.blog-paragraph {
+  font-size: 1.65rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem;
+}
+
 .u-gradient-font {
   background-image: linear-gradient(to right bottom, #007443, #00da86);
   background-clip: text;
@@ -1645,7 +1668,7 @@ body {
 
 .blog-main {
   margin-left: 22%;
-  padding: 0 5%;
+  padding: 0 20% 0 8%;
   font-family: "Zilla Slab", serif;
 }
 
