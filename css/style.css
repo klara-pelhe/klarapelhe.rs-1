@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 @import url("https://fonts.googleapis.com/css?family=Rubik:500");
 @import url("https://fonts.googleapis.com/css?family=Clicker+Script");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:400,400i,500,500i,600,600i,700,700i");
 @keyframes shake {
   30% {
     transform: rotateZ(-4deg);
@@ -991,10 +992,26 @@ body {
 
 .blog-nav {
   position: fixed;
+  font-family: "Zilla Slab", serif;
   width: 22%;
   height: 100%;
   background: #00b57b;
 }
+.blog-nav ul {
+  list-style-type: none;
+}
+.blog-nav__el--first, .blog-nav__el--second, .blog-nav__el--third {
+  margin-left: 10px;
+}
+
+.back-to-website {
+  text-decoration: none;
+}
+
+.blog-socials__link {
+  text-decoration: none;
+}
+
 .footer {
   position: relative;
   font-family: "Rubik", sans-serif;
@@ -1629,6 +1646,7 @@ body {
 .blog-main {
   margin-left: 22%;
   padding: 0 5%;
+  font-family: "Zilla Slab", serif;
 }
 
 /*# sourceMappingURL=style.css.map */

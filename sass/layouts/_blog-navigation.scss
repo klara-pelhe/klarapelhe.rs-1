@@ -1,16 +1,33 @@
 .blog-nav {
     position: fixed;
+    font-family: 'Zilla Slab', serif;
     width: 22%;
     height: 100%;
     background: #00b57b;
 
-    &__el {
+    ul {
+        list-style-type: none;
+    }
 
+    &__el {
+        
     }
 
     &__el--first,
     &__el--second,
     &__el--third {
+        margin-left: 10px;
+    }
+}
 
+.back-to-website {
+    text-decoration: none;
+}
+
+.blog-socials {
+
+
+    &__link {
+        text-decoration: none;
     }
 }
