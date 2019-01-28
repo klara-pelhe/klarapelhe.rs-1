@@ -95,7 +95,6 @@ html {
 
 body {
   font-size: 1.6rem;
-  padding: 1.8rem;
 }
 @media all and (max-width: 900px) {
   body {
@@ -999,7 +998,7 @@ body {
   display: flex;
   opacity: 0;
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   right: 2.5rem;
   list-style-type: none;
   animation: navIn ease-in-out 1.5s;
@@ -1732,16 +1731,12 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  padding: 0;
-}
-
 .blog-main {
   margin-left: 22%;
   font-family: "Zilla Slab", serif;
 }
 
-section {
+.blog-section {
   padding: 0 20% 0 17%;
   margin-bottom: 7rem;
 }
