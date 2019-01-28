@@ -1075,8 +1075,18 @@ body {
   bottom: 10px;
   text-align: center;
 }
-.blog-socials__link {
+.blog-socials a:hover {
   text-decoration: none;
+}
+.blog-socials__icon {
+  width: 2.7rem;
+  background: #00ffae;
+  border-radius: 0.4rem;
+  padding: 0.3rem;
+  margin-right: 0.15rem;
+}
+.blog-socials__icon:hover {
+  background: white;
 }
 
 .footer {

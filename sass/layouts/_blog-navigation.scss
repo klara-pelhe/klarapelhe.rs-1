@@ -57,7 +57,19 @@
     bottom: 10px;
     text-align: center;
 
-    &__link {
+    a:hover {
         text-decoration: none;
+    }
+
+    &__icon {
+        width: 2.7rem;
+        background: #00ffae;
+        border-radius: .4rem;
+        padding: .3rem;
+        margin-right: .15rem;
+
+        &:hover {
+            background: white;
+        }
     }
 }
