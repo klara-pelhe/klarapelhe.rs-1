@@ -95,3 +95,25 @@
         transform: translateY(0);
     }
 }
+
+@keyframes blog-new {
+    0% {
+        transform: rotateZ(0); 
+    }
+
+    10% {
+        transform: rotateZ(20deg); 
+    }
+
+    20% {
+        transform: rotateZ(-20deg); 
+    }
+
+    30% {
+        transform: rotateZ(0);
+    }
+
+    100% {
+        transform: rotateZ(0); 
+    }
+}

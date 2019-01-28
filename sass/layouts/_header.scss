@@ -43,3 +43,37 @@
     }
 }
 
+.back-to-blog {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-decoration: none;
+    font-family: "UniversLTStd-Light";
+    font-size: 1.2rem;
+    color: #007250;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 3px rgba(34, 34, 34, 0.3);
+    background: #ebfcf5;
+    border-radius: 5px;
+    padding: .7rem 1.5rem;
+    letter-spacing: .1rem;
+    opacity: 0;
+    animation: navIn ease-in-out 1.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+
+    &::after {
+        content: "new";
+        background: #e4263f;
+        color: white;
+        font-size: .8rem;
+        margin-left: .9rem;
+        padding: .2rem;
+        position: absolute;
+        top: -.65rem;
+        left: 4.4rem;
+        border-radius: 2px;
+        animation: blog-new 2s infinite;
+    }
+}
+
