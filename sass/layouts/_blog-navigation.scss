@@ -1,13 +1,14 @@
 .blog-nav {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     font-family: 'Zilla Slab', serif;
     width: 22%;
     height: 100%;
     background: #00b57b;
 
     &__main-content {
-        position: relative;
-        top: 20rem;
         padding: 3rem;
         color: white;
         font-size: 1.63rem;
@@ -36,7 +37,8 @@
 }
 
 .blog-socials {
-
+    position: relative;
+    bottom: 10px;
 
     &__link {
         text-decoration: none;
