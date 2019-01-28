@@ -373,9 +373,10 @@ body {
 .blog-primary-heading {
   position: relative;
   width: 100%;
-  font-size: 2.1rem;
+  font-size: 2rem;
   margin-bottom: 8rem;
-  background: #f1f1f1;
+  background: #f0f0f0;
+  color: #464646;
   padding: 6rem 0 9rem 0;
   text-align: center;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -388,6 +389,7 @@ body {
   font-weight: 600;
   font-size: 2.9rem;
   margin-bottom: 2.5rem;
+  color: #353535;
 }
 
 .blog-page-notation {
@@ -1698,7 +1700,7 @@ body {
 }
 
 section {
-  padding: 0 20% 0 15%;
+  padding: 0 20% 0 17%;
   margin-bottom: 7rem;
 }
 
