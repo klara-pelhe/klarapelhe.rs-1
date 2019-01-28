@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     font-family: 'Zilla Slab', serif;
     width: 22%;
     height: 100%;
@@ -13,6 +14,18 @@
         color: white;
         font-size: 1.63rem;
         font-weight: 500;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:visited {
+            color: white;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     ul {
@@ -34,11 +47,15 @@
 
 .back-to-website {
     text-decoration: none;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    font-size: 1.5rem;
 }
 
 .blog-socials {
     position: relative;
     bottom: 10px;
+    text-align: center;
 
     &__link {
         text-decoration: none;

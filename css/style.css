@@ -1041,6 +1041,15 @@ body {
   font-size: 1.63rem;
   font-weight: 500;
 }
+.blog-nav a {
+  text-decoration: none;
+}
+.blog-nav a:visited {
+  color: white;
+}
+.blog-nav a:hover {
+  text-decoration: underline;
+}
 .blog-nav ul {
   list-style-type: none;
 }
@@ -1056,11 +1065,15 @@ body {
 
 .back-to-website {
   text-decoration: none;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
 }
 
 .blog-socials {
   position: relative;
   bottom: 10px;
+  text-align: center;
 }
 .blog-socials__link {
   text-decoration: none;
