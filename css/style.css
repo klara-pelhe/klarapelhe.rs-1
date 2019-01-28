@@ -396,7 +396,7 @@ body {
   font-weight: 500;
   font-style: italic;
   margin-right: 0.5rem;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 .blog-paragraph {
@@ -1032,11 +1032,25 @@ body {
   height: 100%;
   background: #00b57b;
 }
+.blog-nav__main-content {
+  position: relative;
+  top: 20rem;
+  padding: 3rem;
+  color: white;
+  font-size: 1.63rem;
+  font-weight: 500;
+}
 .blog-nav ul {
   list-style-type: none;
 }
-.blog-nav__el--first, .blog-nav__el--second, .blog-nav__el--third {
-  margin-left: 10px;
+.blog-nav__el {
+  margin-bottom: 1.2rem;
+}
+.blog-nav__inner-ul {
+  margin-left: 2.5rem;
+}
+.blog-nav__inner-ul--el {
+  margin-bottom: 0.4rem;
 }
 
 .back-to-website {
