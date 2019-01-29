@@ -24,7 +24,7 @@
         }
 
         @media only screen and (max-width: 1200px) {
-            font-size: 1.35rem;
+            font-size: 1.45rem;
             padding: 2rem;
         }
     }
@@ -58,9 +58,97 @@
             margin-bottom: .4rem;
         }
 
+        @media only screen and (max-width: 1200px) {
+            margin-left: 1.5rem;
+        }
+
         @media only screen and (max-width: 900px) {
             margin-left: 1.5rem;
         }
+    }
+}
+
+.hamburger-nav {
+    display: none;
+    cursor: pointer;
+
+    &__bar {
+        background: rgb(66, 66, 66);
+        height: .4rem;
+        width: 2.8rem;
+        margin: .4rem;
+    }
+
+    @media only screen and (max-width:900px) {
+        display: inline-block;
+        position: fixed;
+        top: 1.7rem;
+        right: 1.7rem;
+        z-index: 10;
+    }
+}
+
+.blog-nav-small-screen {
+    display: none;
+    font-family: 'Zilla Slab';
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px 1px rgb(128, 128, 128);
+    height: 100vh;
+    width: 50vw;
+    padding: 3rem;
+    position: fixed;
+    right: -150%;
+    z-index: 9;
+    background: #00b57b;
+    transition: all ease .7s;
+
+    &__outer,
+    &__inner {
+        list-style-type: none;
+
+        a,
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            color: #00ffae;
+        }
+    }
+
+    &__outer {
+        color: white;
+        margin-top: 6rem;
+    }
+
+    &__inner {
+        margin-left: 2rem;
+        margin-top: .7rem;
+
+        li {
+            margin-bottom: .4rem;
+        }
+    }
+
+    &-in {
+        right: 0;
+    }
+
+    @media only screen and (max-width: 900px) {
+        display: block;  
+    }
+
+    @media only screen and (max-width: 600px) {
+        width: 100vw;
+        padding: 2rem 6rem;
+        font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        padding: 2rem 3rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -77,6 +165,12 @@
     @media only screen and (max-width: 1200px) {
         font-size: 1.35rem;
     }
+}
+
+.back-to-website-small-screen {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
 }
 
 .blog-socials {
@@ -105,6 +199,30 @@
 
         @media only screen and (max-width: 1200px) {
             width: 2.3rem;
+        }
+    }
+}
+
+.blog-socials-small-screen {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    bottom: 2rem;
+
+    a,
+    a:hover {
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 3rem;
+        border-radius: 7px;
+        padding: .5rem;
+        background: #abfde3;
+
+        &:hover {
+            background: transparent;
         }
     }
 }

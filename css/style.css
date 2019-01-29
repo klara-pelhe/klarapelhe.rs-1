@@ -418,9 +418,16 @@ body {
 }
 @media only screen and (max-width: 900px) {
   .blog-primary-heading {
-    padding: 3rem 2rem 5rem 2rem;
+    padding: 7rem 2rem 9rem 2rem;
     margin-bottom: 5rem;
     font-size: 1.4rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-primary-heading {
+    font-size: 1.2rem;
+    padding: 7rem 1.5rem 8rem 1.5rem;
+    margin-bottom: 3.5rem;
   }
 }
 
@@ -444,6 +451,11 @@ body {
 @media only screen and (max-width: 900px) {
   .blog-secondary-heading {
     font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-secondary-heading {
+    font-size: 2rem;
   }
 }
 
@@ -473,6 +485,11 @@ body {
 @media only screen and (max-width: 900px) {
   .blog-paragraph {
     font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-paragraph {
+    line-height: 2.2rem;
   }
 }
 
@@ -1089,6 +1106,18 @@ body {
   border-radius: 2px;
   animation: blog-new 2s 8s infinite;
 }
+@media only screen and (max-width: 600px) {
+  .back-to-blog::after {
+    margin-left: 0;
+    font-size: 0.7rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .back-to-blog {
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+  }
+}
 
 .header-nav {
   font-family: "UniversLTStd-Light";
@@ -1157,7 +1186,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .blog-nav__main-content {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
     padding: 2rem;
   }
 }
@@ -1184,9 +1213,94 @@ body {
 .blog-nav__inner-ul--el {
   margin-bottom: 0.4rem;
 }
+@media only screen and (max-width: 1200px) {
+  .blog-nav__inner-ul {
+    margin-left: 1.5rem;
+  }
+}
 @media only screen and (max-width: 900px) {
   .blog-nav__inner-ul {
     margin-left: 1.5rem;
+  }
+}
+
+.hamburger-nav {
+  display: none;
+  cursor: pointer;
+}
+.hamburger-nav__bar {
+  background: #424242;
+  height: 0.4rem;
+  width: 2.8rem;
+  margin: 0.4rem;
+}
+@media only screen and (max-width: 900px) {
+  .hamburger-nav {
+    display: inline-block;
+    position: fixed;
+    top: 1.7rem;
+    right: 1.7rem;
+    z-index: 10;
+  }
+}
+
+.blog-nav-small-screen {
+  display: none;
+  font-family: "Zilla Slab";
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px 1px gray;
+  height: 100vh;
+  width: 50vw;
+  padding: 3rem;
+  position: fixed;
+  right: -150%;
+  z-index: 9;
+  background: #00b57b;
+  transition: all ease 0.7s;
+}
+.blog-nav-small-screen__outer, .blog-nav-small-screen__inner {
+  list-style-type: none;
+}
+.blog-nav-small-screen__outer a,
+.blog-nav-small-screen__outer a:visited, .blog-nav-small-screen__inner a,
+.blog-nav-small-screen__inner a:visited {
+  text-decoration: none;
+  color: white;
+}
+.blog-nav-small-screen__outer a:hover, .blog-nav-small-screen__inner a:hover {
+  color: #00ffae;
+}
+.blog-nav-small-screen__outer {
+  color: white;
+  margin-top: 6rem;
+}
+.blog-nav-small-screen__inner {
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+}
+.blog-nav-small-screen__inner li {
+  margin-bottom: 0.4rem;
+}
+.blog-nav-small-screen-in {
+  right: 0;
+}
+@media only screen and (max-width: 900px) {
+  .blog-nav-small-screen {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blog-nav-small-screen {
+    width: 100vw;
+    padding: 2rem 6rem;
+    font-size: 1.7rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-nav-small-screen {
+    padding: 2rem 3rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -1205,6 +1319,12 @@ body {
   .back-to-website {
     font-size: 1.35rem;
   }
+}
+
+.back-to-website-small-screen {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
 }
 
 .blog-socials {
@@ -1234,6 +1354,27 @@ body {
   .blog-socials__icon {
     width: 2.3rem;
   }
+}
+
+.blog-socials-small-screen {
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+  bottom: 2rem;
+}
+.blog-socials-small-screen a,
+.blog-socials-small-screen a:hover {
+  text-decoration: none;
+}
+.blog-socials-small-screen__icon {
+  width: 3rem;
+  border-radius: 7px;
+  padding: 0.5rem;
+  background: #abfde3;
+}
+.blog-socials-small-screen__icon:hover {
+  background: transparent;
 }
 
 .footer {
@@ -1902,6 +2043,11 @@ html {
 @media only screen and (max-width: 1200px) {
   .blog-section {
     padding: 0 12% 0 12%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .blog-section {
+    padding: 0 5% 0 5%;
   }
 }
 
