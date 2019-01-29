@@ -9,11 +9,11 @@
     flex-direction: column;
     justify-content: center;
 
-    @media all and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         height: 90vh;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         height: 85vh;
     }
 }
@@ -28,17 +28,17 @@
     animation-fill-mode: forwards;
     margin-bottom: 5rem;
 
-    @media all and (max-width: 1500px) {
+    @media only screen and (max-width: 1500px) {
         width: 9rem;
         margin-bottom: 4rem;
     }
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         width: 8rem;
         margin-bottom: 2.2rem;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         width: 6.2rem;
     }
 }

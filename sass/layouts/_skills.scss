@@ -66,16 +66,16 @@
         clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
         height: 3.6rem;
 
-        @media all and (max-width: 1200px) {
+        @media only screen and (max-width: 1200px) {
             height: 3.2rem;
         }
 
-        @media all and (max-width: 600px) {
+        @media only screen and (max-width: 600px) {
             height: 2.6rem;
             margin: .3rem 0 1.3rem 0;
         }
 
-        @media all and (max-width: 480px) {
+        @media only screen and (max-width: 480px) {
             height: 2.1rem;
         }
     
@@ -87,21 +87,21 @@
         transform: skewX(-10deg);
     }
 
-    @media all and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         width: 85%;
     }
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         margin-top: 5%;
         font-size: 1.1rem;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         font-size: .9rem;
         letter-spacing: 1px;
     }
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         font-size: .7rem;
     }
 
@@ -113,15 +113,15 @@
     margin-top: 3%;
     margin-left: 4%;
 
-    @media all and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         width: 85%;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         margin-top: 4%;   
     }
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         margin-top: 6%;
     }
 
@@ -141,20 +141,20 @@
             text-shadow: 1px 1px 1px rgba(13, 95, 50, 0.8);
             color: white;
 
-            @media all and (max-width: 1200px) {
+            @media only screen and (max-width: 1200px) {
                 font-size: 1.6rem;
             }
 
-            @media all and (max-width: 900px) {
+            @media only screen and (max-width: 900px) {
                 font-size: 1.4rem;
             }
 
-            @media all and (max-width: 600px) {
+            @media only screen and (max-width: 600px) {
                 font-size: .9rem;
                 letter-spacing: 1px;
             }
 
-            @media all and (max-width: 480px) {
+            @media only screen and (max-width: 480px) {
                 font-size: .8rem;
             }    
         }
@@ -164,16 +164,16 @@
             clip-path: polygon(0 0, 96% 0, 100% 50%, 96% 100%, 0 100%);
             margin-top: 3%;
 
-            @media all and (max-width: 1200px) {
+            @media only screen and (max-width: 1200px) {
                 height: 3.2rem;
             }
 
-            @media all and (max-width: 600px) {
+            @media only screen and (max-width: 600px) {
                 height: 2.6rem;
                 margin: .3rem 0 .9rem 0;
             }
 
-            @media all and (max-width: 480px) {
+            @media only screen and (max-width: 480px) {
                 height: 2.1rem;
             }
         

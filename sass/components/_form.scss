@@ -17,12 +17,12 @@
     left: 50%;
     transform: translateX(-50%);
 
-    @media all and (max-width: 1500px) {
+    @media only screen and (max-width: 1500px) {
         margin-top: 8rem;
         max-width: 95rem; 
     }
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         background-image: 
             linear-gradient(
                 105deg,
@@ -36,20 +36,20 @@
     width: 50%;
     padding: 2.5rem 6rem;
 
-    @media all and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         padding: 2.5rem 4.5rem;
     }
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         width: 100%;
         padding: 2.5rem 6rem;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         padding: 0 4rem 2.5rem 4rem;  
     }
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         padding: 0 2rem 2.5rem 2rem;
     }
 
@@ -60,11 +60,11 @@
         &:not(:last-child) {
             margin-bottom: 1.3rem;
 
-            @media all and (max-width: 1500px) {
+            @media only screen and (max-width: 1500px) {
                 margin-bottom: .5rem;
             }
 
-            @media all and (max-width: 480px) {
+            @media only screen and (max-width: 480px) {
                 margin-bottom: 0;
             }
         }
@@ -82,7 +82,7 @@
         display: block;
         background: rgba(255, 255, 255, .9);
 
-        @media all and (max-width: 1500px) {
+        @media only screen and (max-width: 1500px) {
             width: 100%;
             background: rgba(255, 255, 255, .9);
             padding: 1rem 1.5rem;
@@ -148,11 +148,11 @@
         font-family: 'Tangerine', sans-serif;
         text-align: start;
 
-        @media all and (max-width: 1200px) {
+        @media only screen and (max-width: 1200px) {
             font-size: 5rem;
         }
 
-        @media all and (max-width: 900px) {
+        @media only screen and (max-width: 900px) {
             display: none;
         }
 
@@ -163,7 +163,7 @@
 
     .section-heading-primary {
 
-        @media all and (max-width: 1500px) {
+        @media only screen and (max-width: 1500px) {
             margin: 2rem 0 3.5rem 0 !important;
         }
     }

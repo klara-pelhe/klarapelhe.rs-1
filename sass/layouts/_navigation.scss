@@ -2,7 +2,7 @@
     font-family: 'UniversLTStd-Light';
     font-size: 1.23rem;
 
-    @media all and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
         visibility: hidden;
     }
 

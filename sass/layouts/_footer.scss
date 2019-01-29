@@ -2,12 +2,18 @@
     position: relative;
     font-family: "Rubik", sans-serif;
     color: white;
-    font-size: 1.38rem;
+    // font-size: 1.38rem;
+    font-size: 1.45rem;
     border-top: 1px solid black;
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 1000px) {
+        font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: 600px) {
         font-size: 1.2rem;
     }
+
 }
 
 .footer-top {
@@ -16,15 +22,15 @@
     justify-content: center;
     padding: 4rem 0 12rem 0;
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         padding: 3rem 0 8rem 0;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         flex-wrap: wrap;
     }
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
         flex-direction: column;
         align-items: center;
         padding: 4rem 0 3rem 0;
@@ -40,7 +46,7 @@
     }
 
 
-    @media all and (max-width: 480px) {
+    @media only screen and (max-width: 480px) {
 
         &__contact,
         &__menu,
@@ -56,11 +62,11 @@
         margin-bottom: 1rem;
         text-transform: uppercase;
 
-        @media all and (max-width: 900px) {
+        @media only screen and (max-width: 900px) {
             font-size: 1.3rem;
         }
 
-        @media all and (max-width: 480px) {
+        @media only screen and (max-width: 480px) {
             font-size: 1.6rem;
             margin-bottom: 1rem;
         }
@@ -69,11 +75,11 @@
     &__contact {
         margin-right: 8%;
 
-        @media all and (max-width: 900px) {
+        @media only screen and (max-width: 900px) {
             margin-right: 4%;
         }
 
-        @media all and (max-width: 480px) {
+        @media only screen and (max-width: 480px) {
             text-align: center
         }
 
@@ -85,7 +91,7 @@
     &__menu {
         margin-right: 15%;
 
-        @media all and (max-width: 900px) {
+        @media only screen and (max-width: 900px) {
             margin-right: 4%; 
         }
 
@@ -126,7 +132,7 @@
             font-size: 2.6rem;
             margin-top: 1rem;
 
-            @media all and (max-width: 900px) {
+            @media only screen and (max-width: 900px) {
                 display: none;
             }
         }
@@ -152,7 +158,7 @@
     font-size: .9rem;
     color: #dfdddb;
 
-    @media all and (max-width: 900px) {
+    @media only screen and (max-width: 900px) {
         font-size: .8rem;
     }
 
@@ -161,11 +167,11 @@
         padding: 1rem 0;
     }
 
-    @media all and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         font-size: .7rem;   
     }
 
-    @media all and (max-width: 400px) {
+    @media only screen and (max-width: 400px) {
         padding: 0 .5rem;
     }
 }
