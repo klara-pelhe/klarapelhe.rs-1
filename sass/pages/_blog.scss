@@ -13,9 +13,22 @@ html {
 .blog-main {
     margin-left: 22%;
     font-family: 'Zilla Slab', serif;
+
+    @media only screen and (max-width: 900px) {
+        margin-left: 0;
+    }
 }
 
 .blog-section {
     padding: 0 20% 0 17%;
     margin-bottom: 7rem;
+
+    @media only screen and (max-width: 1500px) {
+        margin-bottom: 5rem;
+        padding: 0 15% 0 14%;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        padding: 0 12% 0 12%;
+    }
 }

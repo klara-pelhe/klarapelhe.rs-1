@@ -274,6 +274,25 @@
     &__text {
         display: inline-block;
     }
+
+    @media only screen and (max-width: 1500px) {
+        font-size: 1.8rem;
+    }
+
+    @media only screen and (max-width: 1300px) {
+        font-size: 1.6rem;
+        padding: 4rem 2rem 7rem 2rem;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+        padding: 3rem 2rem 5rem 2rem;
+        margin-bottom: 5rem;
+        font-size: 1.4rem;
+    }
 }
 
 .blog-secondary-heading {
@@ -281,6 +300,19 @@
     font-size: 2.9rem;
     margin-bottom: 2.5rem;
     color: rgb(53, 53, 53);
+
+    @media only screen and (max-width: 1500px) {
+        font-size: 2.7rem;
+        margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 2.5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+        font-size: 2.2rem;
+    }
 }
 
 .blog-page-notation {
@@ -288,10 +320,23 @@
     font-style: italic;
     margin-right: .5rem;
     opacity: .7;
+
+    @media only screen and (max-width: 900px) {
+        margin-right: .2rem;
+    }
 }
 
 .blog-paragraph {
     font-size: 1.85rem;
     line-height: 2.8rem;
     margin-bottom: 2rem;
+
+    @media only screen and (max-width: 1500px) {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+        font-size: 1.7rem;
+    }
 }
