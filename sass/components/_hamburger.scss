@@ -21,6 +21,13 @@
         z-index: 100;
         text-align: center;
 
+        @media only screen and (max-width: 1200px) {
+            top: 2.3rem;
+            right: 2.3rem;
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
         @media only screen and (max-width: 900px) {
             top: 2rem;
             right: 2rem;
@@ -48,6 +55,13 @@
         width: 3rem;
         border-radius: 50%;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+
+        @media only screen and (max-width: 1200px) {
+            top: 3.5rem;
+            right: 3.5rem;
+            width: 2rem;
+            height: 2rem;
+        }
 
         @media only screen and (max-width: 900px) {
             top: 3.4rem;
@@ -133,7 +147,7 @@
     }
 
     &__checkbox:checked ~ &__background {
-        transform: scale(100);
+        transform: scale(200);
     }
 
     &__checkbox:checked ~ &__nav {
@@ -145,6 +159,10 @@
     &__icon {
         position: relative;
         transform: translateY(2.9rem);
+
+        @media only screen and (max-width: 1200px) {
+            transform: translateY(2.22rem);
+        }
 
         @media all and (max-width: 600px) {
             transform: translateY(1.82rem);
