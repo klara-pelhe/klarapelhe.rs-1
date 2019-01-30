@@ -599,7 +599,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Filson-Pro-Regular-Italic";
+  font-family: "Filson-Pro-Regular";
   font-size: 1.5rem;
   color: white;
   box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.3);
