@@ -33,6 +33,7 @@
     src: url(../fonts/BakerieSmoothWide-Medium.otf);
 }
 
+
 .main-heading {
     display: flex;
     flex-direction: column;
@@ -86,7 +87,7 @@
     justify-content: center;
     font-family: 'Tangerine', cursive;
     font-size: 12rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+    text-shadow: 1px 1px 1px rgba(0, 68, 53, 0.8);
     text-transform: none;
 
     @media all and (max-width: 1200px) {
@@ -99,10 +100,6 @@
 
     @media all and (max-width: 600px) {
         font-size: 7rem;
-    }
-
-    @media all and (max-width: 400px) {
-        font-size: 5.5rem;
     }
 
     &__hi {
@@ -138,12 +135,12 @@
     }
 
     @media all and (max-width: 600px) {
-        font-size: 4.5rem;
+        font-size: 5.2rem;
         letter-spacing: 1px;
     }
 
-    @media all and (max-width: 400px) {
-        font-size: 4.2rem;
+    @media all and (max-width: 480px) {
+        font-size: 5rem;
     }
 }
 
@@ -254,6 +251,7 @@
 
     @media all and (max-width: 600px) {
         font-size: 1.35rem;
+        text-shadow: 2px 2px 1px rgba(0, 68, 53, 0.8);
     }
 }
 

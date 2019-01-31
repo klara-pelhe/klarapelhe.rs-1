@@ -208,10 +208,18 @@
     
     &__button:hover &__icon::before {
         top: -1rem;
+
+        @media all and (max-width: 480px) {
+            top: -.8rem;
+        }  
     }
 
     &__button:hover &__icon::after {
         top: 1rem;
+
+        @media all and (max-width: 480px) {
+            top: .8rem;
+        }  
     }
 
     &__checkbox:checked + &__button &__icon {
