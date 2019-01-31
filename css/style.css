@@ -390,7 +390,7 @@ body {
   position: relative;
   width: 100%;
   font-size: 2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
   background: #f0f0f0;
   color: #464646;
   padding: 6rem 0 9rem 0;
@@ -427,7 +427,7 @@ body {
   .blog-primary-heading {
     font-size: 1.1rem;
     padding: 7rem 2rem 8rem 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 0;
   }
 }
 
@@ -2078,23 +2078,26 @@ html {
 }
 
 .blog-section {
-  padding: 0 20% 0 17%;
-  margin-bottom: 7rem;
+  padding: 4% 20% 0 17%;
 }
 @media only screen and (max-width: 1500px) {
   .blog-section {
-    margin-bottom: 5rem;
-    padding: 0 15% 0 14%;
+    padding: 4% 15% 0 14%;
   }
 }
 @media only screen and (max-width: 1200px) {
   .blog-section {
-    padding: 0 12% 0 12%;
+    padding: 4% 12% 0 12%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .blog-section {
+    padding: 4% 5% 0 5%;
   }
 }
 @media only screen and (max-width: 480px) {
   .blog-section {
-    padding: 0 5% 0 5%;
+    padding: 10% 5% 0 5%;
   }
 }
 
