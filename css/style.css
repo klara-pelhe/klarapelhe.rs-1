@@ -1562,8 +1562,8 @@ body {
 .footer-bottom {
   background: #013326;
   text-align: center;
-  font-family: "UniversLTStd-Light", sans-serif;
-  font-size: 0.9rem;
+  font-family: "Arial", sans-serif;
+  font-size: 0.8rem;
   color: #dfdddb;
 }
 @media only screen and (max-width: 900px) {
