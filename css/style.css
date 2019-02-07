@@ -1129,25 +1129,24 @@ body {
   background: #e4263f;
   color: white;
   font-size: 0.8rem;
-  margin-left: 0.9rem;
+  margin-left: 0.2rem;
   padding: 0.2rem;
   position: absolute;
   top: -0.65rem;
-  left: 4.4rem;
   border-radius: 2px;
   animation: blog-new 2s 8s infinite;
 }
 @media only screen and (max-width: 600px) {
   .back-to-blog::after {
     margin-left: 0;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .back-to-blog {
-    padding: 0.5rem 1.2rem;
-    font-size: 1rem;
-    line-height: 1rem;
+    padding: 0.5rem 0.9rem;
+    font-size: 0.9rem;
+    line-height: 0.9rem;
   }
 }
 
