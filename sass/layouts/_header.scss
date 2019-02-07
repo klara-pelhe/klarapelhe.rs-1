@@ -10,11 +10,7 @@
     justify-content: center;
 
     @media only screen and (max-width: 1200px) {
-        height: 90vh;
-    }
-
-    @media only screen and (max-width: 600px) {
-        height: 85vh;
+        height: 100vh;
     }
 }
 
