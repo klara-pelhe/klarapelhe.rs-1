@@ -586,6 +586,7 @@ body {
   background-color: #00a876;
   color: #ebfcf5;
   margin-bottom: 1rem;
+  animation: none;
 }
 @media only screen and (max-width: 600px) {
   .btn--green {
