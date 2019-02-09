@@ -13,9 +13,8 @@
         top: 2rem;
         right: 2rem;
         list-style-type: none;
-        animation: navIn ease-in-out 1.5s;
+        animation: navIn 1.5s;
         animation-fill-mode: forwards;
-        animation-delay: 8s;
     }
 
     &__el {

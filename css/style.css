@@ -17,6 +17,9 @@
   0% {
     opacity: 0;
   }
+  80% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
   }
@@ -25,11 +28,32 @@
   0% {
     opacity: 0;
   }
-  50% {
+  40% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+  }
+}
+@keyframes scaleIn {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.12);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(70%) skewX(-15deg);
+  }
+  100% {
+    transform: translateX(0) skewX(-15deg);
+    opacity: 1;
   }
 }
 @keyframes navIn {
@@ -112,6 +136,7 @@ html {
 
 body {
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 @media all and (max-width: 900px) {
   body {
@@ -170,14 +195,14 @@ body {
   }
 }
 .main-heading__secondary {
-  animation: fadeIn 3.5s;
-  animation-delay: 7s;
+  animation: toLeft ease 2s;
+  animation-delay: 4.3s;
   animation-fill-mode: forwards;
   display: inline-block;
-  opacity: 0;
   background: rgba(0, 68, 53, 0.6);
   text-align: center;
-  transform: skewX(-15deg);
+  opacity: 0;
+  transform: translateX(50%) skewX(-15deg);
   padding: 1rem 2rem;
 }
 @media all and (max-width: 600px) {
@@ -217,25 +242,25 @@ body {
   }
 }
 .heading-primary-first__hi {
-  animation: fadeInOut 3.5s;
+  animation: fadeInOut ease-in 2.2s;
   opacity: 0;
 }
 .heading-primary-first__mynameis {
-  animation: fadeInOut 3.5s;
-  animation-delay: 2.7s;
+  animation: fadeInOut ease-in 2.2s;
+  animation-delay: 2.4s;
   opacity: 0;
   position: absolute;
 }
 
 .heading-primary-second {
-  animation: fadeIn 2s;
-  animation-delay: 5.2s;
+  animation: scaleIn ease 2s;
+  animation-delay: 4.5s;
   animation-fill-mode: forwards;
   display: block;
   font-size: 12rem;
+  transform: scale(0);
   letter-spacing: 3px;
   margin-bottom: 1%;
-  opacity: 0;
   text-transform: uppercase;
 }
 @media all and (max-width: 1500px) {
@@ -261,8 +286,8 @@ body {
 }
 
 .heading-secondary-first {
-  animation: fadeIn 3.5s;
-  animation-delay: 7s;
+  animation: fadeIn 2.2s;
+  animation-delay: 4.2s;
   animation-fill-mode: forwards;
   color: white;
   display: inline-block;
@@ -499,9 +524,9 @@ body {
 
 .btn-wrapper {
   display: inline-block;
-  animation: buttonUp ease-in-out 2s;
+  animation: buttonUp ease 2.5s;
   opacity: 0;
-  animation-delay: 8.5s;
+  animation-delay: 5s;
   animation-fill-mode: forwards;
   white-space: nowrap;
   margin-top: 5rem;
@@ -1074,8 +1099,8 @@ body {
   border-radius: 50%;
   box-shadow: 7px 7px 5px #004435;
   opacity: 0;
-  animation: fadeIn 4.5s;
-  animation-delay: 6s;
+  animation: fadeIn 5s;
+  animation-delay: 5.3s;
   animation-fill-mode: forwards;
   margin-bottom: 5rem;
 }
@@ -1115,9 +1140,8 @@ body {
   padding: 0.7rem 1.5rem;
   letter-spacing: 0.1rem;
   opacity: 0;
-  animation: navIn ease-in-out 1.5s;
+  animation: navIn 1.5s;
   animation-fill-mode: forwards;
-  animation-delay: 8s;
 }
 .back-to-blog::after {
   content: "new";
@@ -1129,7 +1153,7 @@ body {
   position: absolute;
   top: -0.65rem;
   border-radius: 2px;
-  animation: blog-new 2s 8s infinite;
+  animation: blog-new 2s 1s infinite;
 }
 @media only screen and (max-width: 600px) {
   .back-to-blog::after {
@@ -1161,9 +1185,8 @@ body {
   top: 2rem;
   right: 2rem;
   list-style-type: none;
-  animation: navIn ease-in-out 1.5s;
+  animation: navIn 1.5s;
   animation-fill-mode: forwards;
-  animation-delay: 8s;
 }
 .header-nav__el a {
   display: inline-block;

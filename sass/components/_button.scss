@@ -1,11 +1,10 @@
 .btn-wrapper {
     display: inline-block;
-    animation: buttonUp ease-in-out 2s;
+    animation: buttonUp ease 2.5s;
     opacity: 0;
-    animation-delay: 8.5s;
+    animation-delay: 5s;
     animation-fill-mode: forwards;
     white-space: nowrap;
-    // position: absolute;
     margin-top: 5rem;
 
     @media only screen and (max-width: 600px) {
