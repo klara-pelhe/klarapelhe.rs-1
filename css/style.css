@@ -98,7 +98,7 @@
 @keyframes buttonUp {
   0% {
     opacity: 0;
-    transform: translateY(30rem);
+    transform: translateY(40rem);
   }
   100% {
     opacity: 1;
@@ -253,7 +253,7 @@ body {
 }
 
 .heading-primary-second {
-  animation: scaleIn ease-out 2.2s;
+  animation: scaleIn ease-out 2.3s;
   animation-delay: 4.5s;
   animation-fill-mode: forwards;
   display: block;
@@ -524,9 +524,9 @@ body {
 
 .btn-wrapper {
   display: inline-block;
-  animation: buttonUp ease-out 2.3s;
+  animation: buttonUp ease-out 2s;
   opacity: 0;
-  animation-delay: 4.5s;
+  animation-delay: 4s;
   animation-fill-mode: forwards;
   white-space: nowrap;
   margin-top: 5rem;
