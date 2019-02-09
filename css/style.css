@@ -1635,10 +1635,10 @@ body {
 .skills__left {
   margin-right: 5%;
 }
-.skills__left--first {
+.skills__left--first, .skills__left--second {
   width: 95%;
 }
-.skills__left--second, .skills__left--third {
+.skills__left--third {
   width: 80%;
   background: #c9ffeb !important;
 }
@@ -1653,11 +1653,11 @@ body {
 .skills__right--first, .skills__right--second {
   width: 95%;
 }
-.skills__right--third, .skills__right--fourth {
+.skills__right--third, .skills__right--fourth, .skills__right--fifth {
   width: 80%;
   background: #c9ffeb !important;
 }
-.skills__right--fifth, .skills__right--sixth, .skills__right--seventh {
+.skills__right--sixth, .skills__right--seventh {
   width: 50%;
   background: #5bfdbf !important;
 }
