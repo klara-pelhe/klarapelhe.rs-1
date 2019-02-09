@@ -585,6 +585,12 @@ body {
 .btn--green {
   background-color: #00a876;
   color: #ebfcf5;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .btn--green {
+    padding: 1rem 2rem !important;
+  }
 }
 
 .job-description {
