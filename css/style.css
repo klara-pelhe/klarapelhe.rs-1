@@ -1608,6 +1608,10 @@ body {
   display: inline-block;
   padding: 1rem 0;
 }
+.footer-bottom a {
+  text-decoration: none;
+  color: #dfdddb;
+}
 @media only screen and (max-width: 600px) {
   .footer-bottom {
     font-size: 0.7rem;
