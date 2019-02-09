@@ -3,7 +3,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     font-family: 'Zilla Slab', serif;
     width: 22%;
     height: 100%;
@@ -29,7 +28,7 @@
         }
     }
 
-    a {
+    &__main-content a {
         text-decoration: none;
         color: white;
 
@@ -172,10 +171,56 @@
 }
 
 .back-to-website {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    font-size: 1.5rem;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    padding: .2rem 1rem;
+    font-family: 'Zilla Slab';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    border: .2rem solid white;
+
+    &:hover {
+        color: #00b57b;
+        background: white;
+    }
+
+    &:hover &__hamburger div {
+        background: #00b57b;
+    }
+    
+    &__hamburger {
+        display: inline-block;
+
+        &--first,
+        &--second,
+        &--third {
+            background: white;
+            width: 2rem;
+            height: .2rem;
+            margin-bottom: .3rem;
+        }
+
+        &--third {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        position: relative;
+        left: -5%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1000px) {
+            font-size: 1.15rem;
+        }
+    }
 
     @media only screen and (max-width: 1500px) {
         font-size: 1.4rem;
@@ -197,7 +242,7 @@
     bottom: 10px;
     text-align: center;
 
-    a:hover {
+    a {
         text-decoration: none;
     }
 

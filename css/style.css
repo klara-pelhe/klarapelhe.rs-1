@@ -1246,14 +1246,14 @@ body {
     padding: 2rem;
   }
 }
-.blog-nav a {
+.blog-nav__main-content a {
   text-decoration: none;
   color: white;
 }
-.blog-nav a:visited {
+.blog-nav__main-content a:visited {
   color: white;
 }
-.blog-nav a:hover {
+.blog-nav__main-content a:hover {
   text-decoration: underline;
   color: #abfde3;
 }
@@ -1381,10 +1381,49 @@ body {
 }
 
 .back-to-website {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  font-size: 1.5rem;
+  width: 80%;
+  margin: 3rem auto 0 auto;
+  padding: 0.2rem 1rem;
+  font-family: "Zilla Slab";
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: white;
+  border: 0.2rem solid white;
+}
+.back-to-website:hover {
+  color: #00b57b;
+  background: white;
+}
+.back-to-website:hover .back-to-website__hamburger div {
+  background: #00b57b;
+}
+.back-to-website__hamburger {
+  display: inline-block;
+}
+.back-to-website__hamburger--first, .back-to-website__hamburger--second, .back-to-website__hamburger--third {
+  background: white;
+  width: 2rem;
+  height: 0.2rem;
+  margin-bottom: 0.3rem;
+}
+.back-to-website__hamburger--third {
+  margin-bottom: 0;
+}
+.back-to-website__text {
+  display: inline-block;
+  position: relative;
+  left: -5%;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1000px) {
+  .back-to-website__text {
+    font-size: 1.15rem;
+  }
 }
 @media only screen and (max-width: 1500px) {
   .back-to-website {
@@ -1408,7 +1447,7 @@ body {
   bottom: 10px;
   text-align: center;
 }
-.blog-socials a:hover {
+.blog-socials a {
   text-decoration: none;
 }
 .blog-socials__icon {
