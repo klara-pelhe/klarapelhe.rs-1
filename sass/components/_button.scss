@@ -1,8 +1,8 @@
 .btn-wrapper {
     display: inline-block;
-    animation: buttonUp ease 2.5s;
+    animation: buttonUp ease-out 2.3s;
     opacity: 0;
-    animation-delay: 5s;
+    animation-delay: 4.5s;
     animation-fill-mode: forwards;
     white-space: nowrap;
     margin-top: 5rem;
