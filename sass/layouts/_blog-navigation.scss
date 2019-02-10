@@ -47,14 +47,14 @@
     }
 
     &__el {
-        margin-bottom: 1.2rem;
+        margin-bottom: 1.5rem;
     }
 
     &__inner-ul {
         margin-left: 2.5rem;
 
         &--el {
-            margin-bottom: .4rem;
+            margin-bottom: .8rem;
         }
 
         @media only screen and (max-width: 1200px) {
@@ -64,6 +64,10 @@
         @media only screen and (max-width: 900px) {
             margin-left: 1.5rem;
         }
+    }
+
+    &__footer {
+        margin-bottom: 2rem;
     }
 }
 
@@ -106,14 +110,15 @@
     } 
 }
 
-.blog-nav-small-screen {
+.blog-nav-sm {
     display: none;
     font-family: 'Zilla Slab';
     font-weight: 600;
-    font-size: 1.7rem;
-    text-shadow: 1px 1px 1px rgb(128, 128, 128);
+    font-size: 1.45rem;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, .3);
     height: 100vh;
-    width: 50vw;
+    width: 58%;
     padding: 3rem;
     position: fixed;
     right: -150%;
@@ -121,24 +126,66 @@
     background: #00b57b;
     transition: all ease .7s;
 
-    &__outer,
-    &__inner {
+    a,
+    a:visited {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #00ffae;
+    }
+
+    li {
         list-style-type: none;
 
-        a,
-        a:visited {
-            text-decoration: none;
-            color: white;
+        &:hover {
+            color: #00b57b;
         }
+    }
 
-        a:hover {
-            color: #00ffae;
+    &__wrapper {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__top {
+        text-decoration: none;
+        border: .2rem solid white;
+        padding: .2rem 1rem;
+        width: 70%;
+        margin: 1rem auto 0 auto;
+        text-align: center;
+
+        &:hover {
+            background: white;
+            color: #00b57b !important;
+        }
+    }
+
+    // &__main {
+
+    // }
+
+    &__footer {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &--text {
+            display: inline-block;
+            margin-bottom: 1rem;
         }
     }
 
     &__outer {
-        color: white;
-        margin-top: 4rem;
+
+        li {
+            margin-bottom: 1.3rem;
+        }
     }
 
     &__inner {
@@ -146,7 +193,7 @@
         margin-top: .7rem;
 
         li {
-            margin-bottom: .4rem;
+            margin-bottom: .8rem;
         }
     }
 
@@ -155,12 +202,12 @@
     }
 
     @media only screen and (max-width: 900px) {
-        display: block;  
+        display: block;
+        padding: 6rem 2rem 2rem 2rem;
     }
 
     @media only screen and (max-width: 600px) {
-        width: 100vw;
-        padding: 5rem 2rem 2rem 2rem;
+        width: 100%;
         font-size: 1.7rem;
     }
 
@@ -170,7 +217,7 @@
     }
 }
 
-.back-to-website {
+.back-to-main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,15 +278,32 @@
     }
 }
 
-.back-to-website-small-screen {
+.back-to-main-sm {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
 }
 
+.back-to-website {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.3rem;
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Zilla Slab';
+        font-weight: 600;
+
+        @media only screen and (max-width: 1000px) {
+            font-size: 1.15rem;
+        }
+    }
+}
+
 .blog-socials {
-    position: relative;
-    bottom: 10px;
     text-align: center;
 
     a {
@@ -267,12 +331,9 @@
     }
 }
 
-.blog-socials-small-screen {
-    position: absolute;
-    display: block;
-    text-align: center;
-    width: 90%;
-    bottom: 2rem;
+.blog-socials-sm {
+
+    display: inline-block;
 
     a,
     a:hover {
