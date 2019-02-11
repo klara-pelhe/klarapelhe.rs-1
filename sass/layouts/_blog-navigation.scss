@@ -110,6 +110,117 @@
     } 
 }
 
+.back-to-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 80%;
+    margin: 3rem auto 0 auto;
+    padding: .2rem 1rem;
+    font-family: 'Zilla Slab';
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.6rem;
+    color: white;
+    border: .2rem solid white;
+
+    &:hover {
+        color: #00b57b;
+        background: white;
+    }
+
+    &:hover &__hamburger div {
+        background: #00b57b;
+    }
+    
+    &__hamburger {
+        display: inline-block;
+
+        &--first,
+        &--second,
+        &--third {
+            background: white;
+            width: 2rem;
+            height: .2rem;
+            margin-bottom: .3rem;
+        }
+
+        &--third {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        position: relative;
+        left: -5%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1000px) {
+            font-size: 1.15rem;
+        }
+    }
+
+    @media only screen and (max-width: 1500px) {
+        font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        font-size: 1.35rem;
+    }
+}
+
+.back-to-website {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1.3rem;
+
+    &__link {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Zilla Slab';
+        font-weight: 600;
+
+        @media only screen and (max-width: 1000px) {
+            font-size: 1.15rem;
+        }
+    }
+}
+
+.blog-socials {
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 2.7rem;
+        background: #00ffae;
+        border-radius: .4rem;
+        padding: .3rem;
+        margin-right: .15rem;
+
+        &:hover {
+            background: white;
+        }
+
+        @media only screen and (max-width: 1500px) {
+            width: 2.45rem;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            width: 2.3rem;
+        }
+    }
+}
+
+
+// Styles for small screens
+
 .blog-nav-sm {
     display: none;
     font-family: 'Zilla Slab';
@@ -217,120 +328,6 @@
     }
 }
 
-.back-to-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 80%;
-    margin: 3rem auto 0 auto;
-    padding: .2rem 1rem;
-    font-family: 'Zilla Slab';
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.6rem;
-    color: white;
-    border: .2rem solid white;
-
-    &:hover {
-        color: #00b57b;
-        background: white;
-    }
-
-    &:hover &__hamburger div {
-        background: #00b57b;
-    }
-    
-    &__hamburger {
-        display: inline-block;
-
-        &--first,
-        &--second,
-        &--third {
-            background: white;
-            width: 2rem;
-            height: .2rem;
-            margin-bottom: .3rem;
-        }
-
-        &--third {
-            margin-bottom: 0;
-        }
-    }
-
-    &__text {
-        display: inline-block;
-        position: relative;
-        left: -5%;
-        margin: 0 auto;
-
-        @media only screen and (max-width: 1000px) {
-            font-size: 1.15rem;
-        }
-    }
-
-    @media only screen and (max-width: 1500px) {
-        font-size: 1.4rem;
-    }
-
-    @media only screen and (max-width: 1200px) {
-        font-size: 1.35rem;
-    }
-}
-
-.back-to-main-sm {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-}
-
-.back-to-website {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 1.3rem;
-
-    &__link {
-        text-decoration: none;
-        color: white;
-        text-transform: uppercase;
-        font-family: 'Zilla Slab';
-        font-weight: 600;
-
-        @media only screen and (max-width: 1000px) {
-            font-size: 1.15rem;
-        }
-    }
-}
-
-.blog-socials {
-    text-align: center;
-
-    a {
-        text-decoration: none;
-    }
-
-    &__icon {
-        width: 2.7rem;
-        background: #00ffae;
-        border-radius: .4rem;
-        padding: .3rem;
-        margin-right: .15rem;
-
-        &:hover {
-            background: white;
-        }
-
-        @media only screen and (max-width: 1500px) {
-            width: 2.45rem;
-        }
-
-        @media only screen and (max-width: 1200px) {
-            width: 2.3rem;
-        }
-    }
-}
-
 .blog-socials-sm {
 
     display: inline-block;
@@ -349,5 +346,64 @@
         &:hover {
             background: transparent;
         }
+    }
+}
+
+.back-to-main-sm {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+// Styles for main navigation page
+
+.nav-page-chapter {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    padding: 4rem 5.5rem 4.5rem 5.5rem;
+    color: #464646;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 1200px) {
+        padding: 3rem 4.5rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        padding: 1.8rem 3rem 2.5rem 3rem;
+    }
+
+    &__heading {
+        font-weight: 600;
+        font-size: 2.2rem;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: 480px) {
+            font-size: 1.6rem;
+        }
+    }
+
+    &__ul {
+        list-style-type: none;
+        margin-left: 2.5rem;
+        margin-top: 1.5rem;
+        font-size: 1.9rem;
+
+        @media only screen and (max-width: 1200px) {
+            font-size: 1.7rem;
+        }
+
+        @media only screen and (max-width: 480px) {
+            font-size: 1.4rem;
+            margin-left: 2rem;
+            margin-top: 1rem;
+        }
+    }
+
+    &__li {
+        font-weight: 400;
     }
 }
