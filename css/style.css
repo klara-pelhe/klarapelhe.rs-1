@@ -1547,6 +1547,15 @@ body {
   color: #464646;
   margin-bottom: 2rem;
 }
+.nav-page-chapter a,
+.nav-page-chapter a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+.nav-page-chapter a:hover {
+  color: #009666;
+  text-decoration: underline;
+}
 @media only screen and (max-width: 1200px) {
   .nav-page-chapter {
     padding: 3rem 4.5rem;

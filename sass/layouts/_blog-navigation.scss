@@ -365,6 +365,17 @@
     color: #464646;
     margin-bottom: 2rem;
 
+    a,
+    a:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #009666;
+        text-decoration: underline;
+    }
+
     @media only screen and (max-width: 1200px) {
         padding: 3rem 4.5rem;
     }

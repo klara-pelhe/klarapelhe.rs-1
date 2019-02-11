@@ -36,6 +36,27 @@
         </div>
 
         <div class="blog-nav__footer">
+
+            <form class="main-menu-form" action="../contact-form.php" method="POST">
+                <h2 class="main-menu-form__heading">
+                    Imate pitanje, komentar, sugestiju ili primedbu? Radujem se vašem feedback-u! :)
+                </h2>
+
+                <div class="main-menu-form__group">
+                    <input type="text" class="main-menu-form__input" name="name" id="name" required>
+                    <label for="name" class="main-menu-form__label">Vaše ime:</label>
+                </div>
+
+                <div>
+                    <input type="text" class="main-menu-form__input" name="email" id="email" required>
+                    <label for="email" class="main-menu-form__label">Vaš email:</label>
+                </div>
+
+                <div class="main-menu-form__group">
+                    <textarea class="main-menu-form__textarea" name="message" id="message" required></textarea>
+                    <label for="message" class="main-menu-form__label">Sadržaj poruke:</label>
+                </div>
+            </form>
             <div class="blog-socials">
                 <a class="blog-socials__link" href="https://www.facebook.com/Technoismystateofmind" target="_blank">
                     <img class="blog-socials__icon" src="../img/facebook-footer.png" alt="facebook footer image">
@@ -62,7 +83,7 @@
             <div class="nav-page-chapter">
                 <h2 class="nav-page-chapter__heading">1. Uvod</h2>
                 <ul class="nav-page-chapter__ul">
-                    <li class="nav-page-chapter__li">1.1. Dobrodošli na "još jedan" blog o digitalnom marketingu</li>
+                    <li class="nav-page-chapter__li"><a href="./intro.html">1.1. Dobrodošli na "još jedan" blog o digitalnom marketingu</a></li>
                 </ul>
             </div>
 
