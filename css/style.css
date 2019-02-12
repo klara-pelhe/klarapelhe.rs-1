@@ -40,7 +40,7 @@
     transform: scale(0);
   }
   75% {
-    transform: scale(1.12);
+    transform: scale(1.15);
   }
   100% {
     transform: scale(1);
@@ -196,8 +196,8 @@ body {
   }
 }
 .main-heading__secondary {
-  animation: toLeft ease-out 2s;
-  animation-delay: 5s;
+  animation: toLeft ease-out 1.7s;
+  animation-delay: 5.15s;
   animation-fill-mode: forwards;
   display: inline-block;
   background: rgba(0, 68, 53, 0.6);
@@ -528,7 +528,7 @@ body {
   display: inline-block;
   animation: buttonUp ease-out 2s;
   opacity: 0;
-  animation-delay: 5s;
+  animation-delay: 5.3s;
   animation-fill-mode: forwards;
   white-space: nowrap;
   margin-top: 5rem;
@@ -606,12 +606,17 @@ body {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
-  margin-top: 0.8rem;
+  margin-top: 1.2rem;
+}
+.main-nav-btn:hover {
+  transform: translateY(-0.1rem);
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
 }
 @media only screen and (max-width: 1200px) {
   .main-nav-btn {
     padding: 0.5rem 1.5rem;
     font-size: 1.15rem;
+    margin-top: 0.8rem;
   }
 }
 
@@ -882,18 +887,19 @@ body {
 .main-menu-form {
   border: 2px solid white;
   border-radius: 0.8rem;
-  width: 88%;
+  width: 85%;
   margin: 0 auto 5rem auto;
-  padding: 1.5rem 1.8rem;
+  padding: 1.5rem 1.7rem;
   color: white;
 }
 @media only screen and (max-width: 1200px) {
   .main-menu-form {
     padding: 0.8rem 1.2rem;
+    width: 88%;
   }
 }
 .main-menu-form__heading {
-  font-size: 1.75rem;
+  font-size: 1.7rem;
   font-weight: 500;
   margin-bottom: 2rem;
 }
@@ -1426,6 +1432,7 @@ body {
   font-size: 1.6rem;
   color: white;
   border: 0.2rem solid white;
+  transition: all 0.4s ease;
 }
 .back-to-main:hover {
   color: #00b57b;
@@ -1516,9 +1523,9 @@ body {
 
 .blog-nav-sm {
   display: none;
+  font-size: 1.7rem;
   font-family: "Zilla Slab";
-  font-weight: 600;
-  font-size: 1.45rem;
+  font-weight: 500;
   text-transform: uppercase;
   text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
   height: 100vh;
@@ -1572,15 +1579,18 @@ body {
   display: inline-block;
   margin-bottom: 1rem;
 }
-.blog-nav-sm__outer li {
-  margin-bottom: 1.3rem;
+.blog-nav-sm__outer > li {
+  font-weight: 600;
+  margin-top: 1.7rem;
+  margin-bottom: 0.5rem;
 }
 .blog-nav-sm__inner {
   margin-left: 2rem;
-  margin-top: 0.7rem;
+  font-weight: 400;
+  text-transform: capitalize;
 }
 .blog-nav-sm__inner li {
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 .blog-nav-sm-in {
   right: 0;
@@ -1594,7 +1604,7 @@ body {
 @media only screen and (max-width: 600px) {
   .blog-nav-sm {
     width: 100%;
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 @media only screen and (max-width: 480px) {

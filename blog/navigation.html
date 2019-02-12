@@ -14,14 +14,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Blog o digitalnom marketingu - Glavni meni">
-    <meta name="keywords" content="blog digitalni marketing, blog srbija, marketing blog, marketing tutorijal">
+    <meta name="keywords" content="klara pelhe, blog digitalni marketing, blog srbija, marketing blog, marketing tutorijal">
     <meta name="author" content="Klara Pelhe">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Glavni meni</title>
+    <title>Klara Pelhe - Blog - Glavni meni</title>
 </head>
 
 <body class="blog-body">
+        <!-- Small screens navigation (appears only at 900px and below) -->
+        <div class="hamburger-nav">
+                <div class="hamburger-nav__wrapper">
+                    <div class="hamburger-nav__bar hamburger-nav__bar--first"></div>
+                    <div class="hamburger-nav__bar hamburger-nav__bar--second"></div>
+                    <div class="hamburger-nav__bar hamburger-nav__bar--third"></div>
+                </div>
+            </div>
+        
+            <div class="blog-nav-sm">
+                <!-- <a class="back-to-main-sm" href="../">&larr; Glavni meni</a> -->
+                <div class="blog-nav-sm__wrapper">
+                    <a class="blog-nav-sm__top" href="../index.html">&larr; klarapelhe.rs</a>
+            
+                    <div class="blog-nav-sm__main">
+  
+                    </div>
+            
+                    <div class="blog-nav-sm__footer">
+
+                        <form class="main-menu-form" action="../contact-form.php" method="POST">
+                            <h2 class="main-menu-form__heading">
+                                Imate pitanje, komentar, sugestiju ili primedbu? Radujem se vašem feedback-u! :)
+                            </h2>
+            
+                            <div class="main-menu-form__group">
+                                <label for="name" class="main-menu-form__label">Vaše ime:</label>
+                                <input type="text" class="main-menu-form__input" name="name" id="name" required>
+                            </div>
+            
+                            <div class="main-menu-form__group">
+                                <label for="email" class="main-menu-form__label">Vaš email:</label>
+                                <input type="text" class="main-menu-form__input" name="email" id="email" required>
+                            </div>
+            
+                            <div class="main-menu-form__group" id="main-menu-textarea">
+                                <label for="message" class="main-menu-form__label">Sadržaj poruke:</label>
+                                <textarea class="main-menu-form__textarea" name="message" id="message" required></textarea>
+                            </div>
+            
+                            <div class="main-menu-form__group">
+                                <input type="submit" value="Pošalji" name="submit" class="main-nav-btn">
+                            </div>
+                        </form>
+
+                        <div class="blog-socials-sm">
+                            <a class="blog-socials-sm__link" href="https://www.facebook.com/Technoismystateofmind" target="_blank">
+                                <img class="blog-socials-sm__icon" src="../img/facebook-footer.png" alt="facebook footer image">
+                            </a>
+                            <a class="blog-socials-sm__link" href="https://www.instagram.com/iamklara_/?hl=en" target="_blank">
+                                <img class="blog-socials-sm__icon" src="../img/instagram-footer.png" alt="instagram footer image">
+                            </a>
+                            <a class="blog-socials-sm__link" href="https://www.linkedin.com/in/klara-pelhe-109439147/" target="_blank">
+                                <img class="blog-socials-sm__icon" src="../img/linkedin-footer.png" alt="linkedin footer image">
+                            </a>
+                            <a class="blog-socials-sm__link" href="https://github.com/klara-pelhe" target="_blank">
+                                <img class="blog-socials-sm__icon" src="../img/github-footer.png" alt="github footer image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
     <!-- Regular and big screens navigation (above 900px) -->
     <nav class="blog-nav">
@@ -81,12 +144,12 @@
 
     <main class="blog-main">
         <div class="blog-primary-heading" id="1.1.">
-            <h1 class="blog-primary-heading__text">Glavni meni - Spisak svih tekstova</h1>
+            <h1 class="blog-primary-heading__text">Na ovoj stranici možete pronaći sve tekstove</h1>
         </div>
         
         <section class="blog-section">
             <div class="nav-page-chapter">
-                <h2 class="nav-page-chapter__heading">1. Uvod</h2>
+                <h2 class="nav-page-chapter__heading"><a href="./intro.html">1. Uvod</a></h2>
                 <ul class="nav-page-chapter__ul">
                     <li class="nav-page-chapter__li"><a href="./intro.html">1.1. Dobrodošli na "još jedan" blog o digitalnom marketingu</a></li>
                 </ul>
