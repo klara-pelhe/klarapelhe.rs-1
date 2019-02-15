@@ -918,7 +918,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .main-menu-form__heading {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 2rem;
   }
 }
@@ -950,7 +950,7 @@ body {
 }
 @media only screen and (max-width: 1200px) {
   .main-menu-form__label {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .main-menu-form__textarea {
@@ -1418,7 +1418,6 @@ body {
     top: 1.7rem;
     right: 1.7rem;
     z-index: 10;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1429,6 +1428,7 @@ body {
     top: 0;
     right: 0;
     padding: 0.2rem 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -1540,7 +1540,6 @@ body {
   font-size: 1.7rem;
   font-family: "Zilla Slab";
   font-weight: 500;
-  text-transform: uppercase;
   text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.3);
   height: 100vh;
   width: 58%;
@@ -1573,6 +1572,7 @@ body {
 }
 .blog-nav-sm__top {
   text-decoration: none;
+  text-transform: uppercase;
   border: 0.2rem solid white;
   padding: 0.2rem 1rem;
   width: 70%;
