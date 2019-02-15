@@ -51,7 +51,7 @@
     }
 
     &__inner-ul {
-        margin-left: 2.5rem;
+        margin-left: 1.5rem;
 
         &--el {
             margin-bottom: .8rem;
@@ -178,6 +178,11 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 1.3rem;
+
+    &:hover {
+        text-decoration: underline;
+        color: white;
+    }
 
     &__link {
         text-decoration: none;
@@ -372,8 +377,8 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, .3);
     border-radius: 10px;
     padding: 4rem 5.5rem 4.5rem 5.5rem;
-    color: #464646;
     margin-bottom: 2rem;
+    color: #6b6b6b;
 
     a,
     a:visited {
@@ -382,8 +387,7 @@
     }
 
     a:hover {
-        color: #009666;
-        text-decoration: underline;
+        color: #00b37a;
     }
 
     @media only screen and (max-width: 1200px) {
@@ -395,8 +399,8 @@
     }
 
     &__heading {
-        font-weight: 600;
-        font-size: 2.2rem;
+        font-weight: 500;
+        font-size: 2.3rem;
 
         @media only screen and (max-width: 1200px) {
             font-size: 2rem;
@@ -411,10 +415,10 @@
         list-style-type: none;
         margin-left: 2.5rem;
         margin-top: 1.5rem;
-        font-size: 1.9rem;
+        font-size: 2rem;
 
         @media only screen and (max-width: 1200px) {
-            font-size: 1.7rem;
+            font-size: 1.8rem;
         }
 
         @media only screen and (max-width: 480px) {
@@ -425,6 +429,6 @@
     }
 
     &__li {
-        font-weight: 400;
+        // font-weight: 500;
     }
 }
