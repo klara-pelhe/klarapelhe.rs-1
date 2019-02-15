@@ -8,6 +8,10 @@
     height: 100%;
     background: #00b57b;
 
+    @media only screen and (max-width: 1200px) {
+        width: 25%;
+    }
+
     @media only screen and (max-width: 900px) {
         display: none;
     }
@@ -15,7 +19,7 @@
     &__main-content {
         padding: 3rem;
         color: white;
-        font-size: 1.63rem;
+        font-size: 1.65rem;
         font-weight: 500;
 
         @media only screen and (max-width: 1500px) {
@@ -37,7 +41,6 @@
         }
 
         &:hover {
-            text-decoration: underline;
             color:#abfde3;
         }
     }
@@ -387,7 +390,7 @@
     }
 
     a:hover {
-        color: #00b37a;
+        color: #01a370;
     }
 
     @media only screen and (max-width: 1200px) {

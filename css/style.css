@@ -1333,6 +1333,11 @@ body {
   height: 100%;
   background: #00b57b;
 }
+@media only screen and (max-width: 1200px) {
+  .blog-nav {
+    width: 25%;
+  }
+}
 @media only screen and (max-width: 900px) {
   .blog-nav {
     display: none;
@@ -1341,7 +1346,7 @@ body {
 .blog-nav__main-content {
   padding: 3rem;
   color: white;
-  font-size: 1.63rem;
+  font-size: 1.65rem;
   font-weight: 500;
 }
 @media only screen and (max-width: 1500px) {
@@ -1363,7 +1368,6 @@ body {
   color: white;
 }
 .blog-nav__main-content a:hover {
-  text-decoration: underline;
   color: #abfde3;
 }
 .blog-nav ul {
@@ -1679,7 +1683,7 @@ body {
   text-decoration: none;
 }
 .nav-page-chapter a:hover {
-  color: #00b37a;
+  color: #01a370;
 }
 @media only screen and (max-width: 1200px) {
   .nav-page-chapter {
@@ -2378,6 +2382,11 @@ html {
 .blog-main {
   margin-left: 22%;
   font-family: "Zilla Slab", serif;
+}
+@media only screen and (max-width: 1200px) {
+  .blog-main {
+    margin-left: 25%;
+  }
 }
 @media only screen and (max-width: 900px) {
   .blog-main {
