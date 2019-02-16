@@ -10,7 +10,7 @@
         $message = $_POST['message'];
         $headers = "Poruku vam salje " . $name . " sa sledece email adrese: " . $email;
 
-        mail(($mailTo, $subject, $message, $headers);
+        mail($mailTo, $subject, $message, $headers);
         header('Location: ./index.html'); 
     }
 

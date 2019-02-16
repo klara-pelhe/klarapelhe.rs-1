@@ -3,7 +3,7 @@
     font-size: 1.23rem;
 
     @media only screen and (max-width: 1200px) {
-        visibility: hidden;
+        display: none;
     }
 
     & ul {

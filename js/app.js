@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('.hamburger-nav');
-const hamburgerLinks = document.querySelectorAll('.blog-nav-sm a');
-const smallScreenNav = document.querySelector('.blog-nav-sm');
+var hamburger = document.querySelector('.hamburger-nav');
+var hamburgerLinks = document.querySelectorAll('.blog-nav-sm a');
+var smallScreenNav = document.querySelector('.blog-nav-sm');
 
 hamburger.addEventListener('click', function (e) {
     smallScreenNav.classList.toggle('blog-nav-sm-in');
