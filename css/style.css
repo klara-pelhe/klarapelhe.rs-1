@@ -1855,6 +1855,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-size: 1.35rem;
+  text-transform: uppercase;
 }
 .blog-nav-sm__footer--text {
   display: inline-block;
