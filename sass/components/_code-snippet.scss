@@ -1,0 +1,39 @@
+.code-snippet {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    // padding: .4rem 1.3rem;
+    white-space: nowrap;
+
+    @media only screen and (max-width: 1280px) {
+        font-size: 1.45rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+        display: none;
+    }
+
+    &__container {
+        background: #2e2e2e;
+        border-radius: .7rem;
+        padding: inherit;
+        padding: .4rem 1.3rem;
+    }
+
+    &__bracket {
+        color: rgb(0, 255, 21);
+    }
+
+    &__tag {
+        color: rgb(0, 255, 21);
+    }
+
+    &__attribute {
+        color: rgb(255, 181, 45);
+    }
+
+    &__text {
+        color: white;
+    }
+}

@@ -14,8 +14,12 @@ html {
     margin-left: 22%;
     font-family: 'Zilla Slab', serif;
 
+    @media only screen and (max-width: 1500px) {
+        margin-left: 28%;
+    }
+
     @media only screen and (max-width: 1200px) {
-        margin-left: 25%;
+        margin-left: 32%;
     }
 
     @media only screen and (max-width: 900px) {
@@ -36,5 +40,14 @@ html {
 
     @media only screen and (max-width: 600px) {
         padding: 5% 5% 0 5%;  
+    }
+}
+
+.blog-text-img {
+    width: 100%;
+    margin: 1.3rem 0 2.5rem 0;
+
+    @media only screen and (max-width: 900px) {
+        display: none;
     }
 }

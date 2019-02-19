@@ -40,6 +40,12 @@
         width: 6.2rem;
         box-shadow: 3px 3px 2px rgb(0, 68, 53);
     }
+
+    @media only screen and (max-width: 480px) {
+        animation: fadeIn ease-out 2.7s;
+        animation-delay: .3s;
+        animation-fill-mode: forwards;
+    }
 }
 
 .back-to-blog {
@@ -85,6 +91,11 @@
         padding: .5rem .9rem;
         font-size: .9rem; 
         line-height: .9rem;
+    }
+
+    @media only screen and (max-width: 480px) {
+        opacity: 1;
+        animation: none;
     }
 }
 
